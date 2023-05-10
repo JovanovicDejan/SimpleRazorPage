@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Person>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@ViewBag.appTitle</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>Persons</h1>
+       @*{List<Person>? people = (List<Person>?)ViewData["people"];}*@
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Date of birth</td>
+                        <td>Gender</td>
+                        <td>More Details</td>
+                    </tr>
+                </thead>
+
+                @foreach(Person person in Model)
+                {
+                    <tbody>
+                        <tr>
+                            <td>@person.Name</td>
+                            <td>
+                            @if(person.DateOfBirth != null)
+                            {
+                                @person.DateOfBirth.Value.ToString("MM/dd/yyyy")
+                            }
+                            </td>
+                            <td>@person.PersonGender</td>
+                            <td><a href="person-details/@person.Name">More detals</a></td>
+                        </tr>
+                    </tbody>
+                }
+            </table>
+            
+        </div>
+
+        <div><a href="person-with-product">Person with product</a></div>
+</body>
+</html>

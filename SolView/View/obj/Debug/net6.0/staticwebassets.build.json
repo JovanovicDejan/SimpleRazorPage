@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "dQYWOZqNK49OwuDDZl3no8nrmIACusBp48ufkGRL/pY=",
+  "Source": "View",
+  "BasePath": "_content/View",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "View\\wwwroot",
+      "Source": "View",
+      "ContentRoot": "C:\\Users\\dejan\\Desktop\\Ryzer\\SolView\\View\\wwwroot\\",
+      "BasePath": "_content/View",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
